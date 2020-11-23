@@ -1,0 +1,58 @@
+body {
+    font-family: "Roboto", sans-serif !important;
+    max-width: 1920px ;
+}
+
+h1 {
+    font-size: 2.5em !important;
+    font-weight: bold !important;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header-img {
+    flex-grow: 1;
+    text-align: center;
+    background-image: url(../imgs/foto-header.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-img h1 {
+    position: relative;
+    top: 60%;
+    color: white;
+    text-shadow: 3px 3px 9px black;
+}
+
+.header-text {
+    flex-grow: 0;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 17px;
+    color: #99928b;
+    line-height: 1.5;
+}
+
+a {
+    font-style: normal !important;
+    color: #359c9c !important;
+    padding: 5px !important;
+    text-decoration: none;
+    font-size: 1.1em !important;
+    font-weight: bold !important;
+}
+
+.link-container hr {
+    width: 205px;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
