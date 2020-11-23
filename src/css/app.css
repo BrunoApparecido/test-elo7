@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto", sans-serif !important;
-    max-width: 1920px ;
+    max-width: 1920px;
 }
 
 h1 {
@@ -33,7 +33,6 @@ h1 {
 .header-text {
     flex-grow: 0;
     text-align: center;
-    padding: 1.5em;
     font-size: 17px;
     color: #99928b;
     line-height: 1.5;
@@ -48,11 +47,15 @@ a {
     font-weight: bold !important;
 }
 
-.link-container hr {
-    width: 205px;
-    height: 1px;
-    background-color: #ccc;
-    border: none;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.link-container {
+    margin-top: 28px;
+}
+
+.link-container a {
+    border-top: solid 1px #ccc;
+    padding-top: 15px !important;
+}
+
+.container {
+    padding: 1.5em;
 }
