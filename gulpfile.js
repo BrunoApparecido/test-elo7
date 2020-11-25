@@ -42,9 +42,9 @@ function serve() {
         server: "./public"
     });
 
-    gulp.watch("src/css/*.css",cssMinify).on('change', browserSync.reload);;
-    gulp.watch("src/js/*.js", jsMinify).on('change', browserSync.reload);;
-    gulp.watch("src/imgs/*", optimizeImages).on('change', browserSync.reload);;
+    gulp.watch("src/css/*.css",cssMinify).on('change', browserSync.reload);
+    gulp.watch("src/js/*.js", jsMinify).on('change', browserSync.reload);
+    gulp.watch("src/imgs/*", optimizeImages).on('change', browserSync.reload);
     gulp.watch("src/*.html",htmlCopy).on('change', browserSync.reload);
 
 }

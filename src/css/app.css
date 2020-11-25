@@ -63,7 +63,7 @@ a {
 }
 
 .container {
-    padding: 2.8em;
+    padding: 1.8em;
 }
 
 .palavra-ceo {
@@ -81,6 +81,10 @@ a {
     .md-33 {
         min-width: 33% !important;
     }
+    .container {
+        padding: 2.8em;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {    
@@ -128,6 +132,9 @@ a {
 .flex-space-between {
     justify-content:  space-between;
 }
+.flex-basis-0 {
+    flex-basis: 0;
+}
 
 .p-15 {
     padding: 15px;
@@ -135,4 +142,21 @@ a {
 
 .nosso-time {
     background-color: #f8f8f8;
+}
+
+.icones {
+    margin-top: 30px;
+}
+
+.icones h4 {
+    padding: 15px;
+}
+
+h4 {
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+}
+
+.text-justify {
+    text-align: justify;
 }
