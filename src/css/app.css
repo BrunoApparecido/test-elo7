@@ -1,10 +1,19 @@
 body {
     font-family: "Roboto", sans-serif !important;
     max-width: 1920px;
+    font-size: 17px !important;
+    color: #99928b;
+    line-height: 1.5 !important;
+    margin: 0 auto !important;
 }
 
 h1 {
     font-size: 2.5em !important;
+    font-weight: bold !important;
+}
+
+h3 {
+    font-size: 1.5em !important;
     font-weight: bold !important;
 }
 
@@ -33,9 +42,6 @@ h1 {
 .header-text {
     flex-grow: 0;
     text-align: center;
-    font-size: 17px;
-    color: #99928b;
-    line-height: 1.5;
 }
 
 a {
@@ -57,5 +63,76 @@ a {
 }
 
 .container {
-    padding: 1.5em;
+    padding: 2.8em;
+}
+
+.palavra-ceo {
+    background-color: #f8f8f8;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 768px) {
+    .md-50 {
+        min-width: 50% !important;
+    }
+    .md-25 {
+        min-width: 25% !important;
+    }
+    .md-33 {
+        min-width: 33% !important;
+    }
+}
+
+@media screen and (max-width: 767px) {    
+    .sm-100 {
+        min-width: 100% !important;
+    }
+}
+
+.palavra-ceo p {
+    text-align: justify;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.section-titulo {
+    margin-bottom: 30px;
+}
+
+.section-titulo p {
+    font-size: 1.4em;
+    font-style: italic;
+    color: #f9a90e;
+}
+
+.flex-1 {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-space-between {
+    justify-content:  space-between;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.nosso-time {
+    background-color: #f8f8f8;
 }
