@@ -31,6 +31,11 @@ function htmlCopy() {
     .pipe(gulp.dest('public'))
 }
 
+function favIconCopy() {
+    return gulp.src(['src/imgs/favicon/*'])
+    .pipe(gulp.dest('public/imgs/favicon'))
+}
+
 function optimizeImages() {
     return gulp.src(['src/imgs/*.jpg','src/imgs/*.png'])
     .pipe(image())
@@ -44,10 +49,10 @@ function serve() {
 
     gulp.watch("src/css/*.css",cssMinify).on('change', browserSync.reload);
     gulp.watch("src/js/*.js", jsMinify).on('change', browserSync.reload);
-    gulp.watch("src/imgs/*", optimizeImages).on('change', browserSync.reload);
+    gulp.watch(["src/imgs/*"], optimizeImages).on('change', browserSync.reload);
     gulp.watch("src/*.html",htmlCopy).on('change', browserSync.reload);
 
 }
 
-exports.minify = gulp.parallel(jsMinify,cssMinify,htmlCopy,optimizeImages); 
+exports.minify = gulp.parallel(jsMinify,cssMinify,htmlCopy,favIconCopy,optimizeImages); 
 exports.serve = serve;
